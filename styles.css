@@ -164,3 +164,70 @@ body {
         height: 0;
     }
 }
+
+/* Home */
+
+.home-section {
+    height: 56.5vw;
+}
+
+.home-vid {
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.home-content {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    top: 50px;
+}
+
+.home-content>p {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.home-content>a {
+    color: inherit;
+    font-size: 3rem;
+    margin-top: 0;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 450px) {
+
+    .home-content {
+        top: 100px;
+    }
+
+    .home-content>p {
+        font-size: 1.5rem;
+    }
+
+    .home-content>a {
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (min-width: 850px) {
+
+    .home-content {
+        top: 250px;
+    }
+
+    .home-content>p {
+        font-size: 3rem;
+    }
+
+    .home-content>a {
+        font-size: 8rem;
+    }
+}
+
+/* Collection */
