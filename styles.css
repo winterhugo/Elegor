@@ -230,4 +230,20 @@ body {
     }
 }
 
+/* Customer-review */
+
+.review {
+    margin: 40px;
+    letter-spacing: 0.7px;
+}
+
+.review_content {
+    font-size: 1.8rem;
+}
+
+.review_author {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
 /* Collection */
