@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="normalize.css">
+    </head>
+    <body>
+        <section class="nav-block">
+            <div class="nav">
+
+                <img src="images/Elegor-logo-nav.png" class="nav_logo">
+
+                <a href="#" class="nav_element">About us</a>
+                <a href="#" class="nav_element">Collections</a>
+                <a href="#" class="nav_element">Craftsmanship</a>
+                <a href="#" class="nav_element">Contact</a>
+
+                <div class="nav_icons">
+
+                    <div class="search-box">
+                        <input type="text" class="input-search
+                            input-search-inactive"
+                            placeholder="search..." id="input-search">
+                        <span class="btn-search">
+                            <img src="icons/search.svg" class="nav_icon"
+                                id="btn-search" onclick="searchBar()">
+                        </span>
+
+                    </div>
+
+                    <img
+                        src="icons/shopping-bag.svg" class="nav_icon"><img
+                        src="icons/menu-burger.svg" class="nav_icon"
+                        id="nav-burger" onclick="menuBurger()">
+                </div>
+            </div>
+            <div class="nav_coll-remover" id="nav-collapsible">
+                <a href="#" class="nav_element-mob">About us</a>
+                <a href="#" class="nav_element-mob">Collections</a>
+                <a href="#" class="nav_element-mob">Craftsmanship</a>
+                <a href="#" class="nav_element-mob">Contact</a>
+            </div>
+        </section>
+        <section class="home-block">
+            <div class="home-section">
+                <video class="home-vid" autoplay loop muted
+                    src="videos/watch-0.mp4"></video>
+                <div class="home-content">
+                    <p>Strive for excellence</p>
+                    <a href="#">New Models 2023</a></div>
+            </div>
+        </section>
+        <section class="review-block">
+            <div class="review">
+                <p class="review_content">I just recently bought my watch here,
+                    a chronograph to be
+                    specific. I have never owned a such a beautiful watch and I
+                    must say that i am very happy with the service and the
+                    quality of the watch.
+                </p>
+                <p class="review_author">
+                    ~ John Smith
+                </p>
+            </div>
+        </section>
+        <section>
+            <div class="sandy"></div>
+        </section>
+        <script src="index.js"></script>
+    </body>
+</html>
