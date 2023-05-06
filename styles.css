@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #222222;
+    --color-primary: #212121;
     --color-secondary: #333333;
     --color-acccent: #8f7f1a;
 }
@@ -113,17 +113,20 @@ body {
 .input-search {
     height: 30px;
     outline: none;
-    padding: 15px 10px;
-    border-radius: 4px;
+    background: none;
+    padding: 10px 20px;
+    border-radius: 9999px;
     border: none;
     position: relative;
     bottom: 21px;
     transition: box-shadow .2s;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    color: #fff;
 }
 
-.input-search:focus {
-    box-shadow: 0 0 2px 3px #8f7f1a;
+.input-search:focus::placeholder {
+    color: var(--color-acccent);
 }
 
 .input-search-active {
@@ -191,7 +194,6 @@ body {
     font-size: 1rem;
     text-transform: uppercase;
     margin-bottom: 0;
-    font-family: 'Times New Roman', Times, serif;
 }
 
 .home-content>a {
@@ -276,9 +278,117 @@ body {
     }
 }
 
-/* Collection */
+/* Button */
 
-.sandy {
-    background-color: #333333;
-    height: 700px;
+.btn {
+    margin: 25px 0 25px 0;
+    width: 100%;
+    background: var(--color-primary);
+    color: white;
+    font-family: inherit;
+    padding: 5px;
+    padding-left: 45px;
+    font-size: 1.3rem;
+    font-weight: 300;
+    border-radius: 30px;
+    border: none;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    box-shadow: 16px 16px 33px #121212,
+        -16px -16px 33px #303030;
+    overflow: hidden;
+    position: relative;
+    height: 35px;
+    padding-right: 50px;
+}
+
+.btn-icon {
+    background: var(--color-acccent);
+    margin-left: 10px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 60px;
+    border-radius: 25px;
+    right: 5px;
+    transition: all 0.3s;
+}
+
+.btn:hover .btn-icon {
+    width: calc(100% - 10px);
+}
+
+.btn-icon svg {
+    width: 17px;
+    transition: transform 0.3s;
+    color: var(--color-primary);
+}
+
+.btn:hover .btn-icon svg {
+    transform: translateX(0.1em);
+}
+
+.btn-:active .btn-icon {
+    transform: scale(0.95);
+}
+
+
+/* Cards */
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 400px;
+    background: #212121;
+    border-radius: 30px;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+        -15px -15px 30px rgb(60, 60, 60);
+}
+
+.card-img {
+    background-image: url(images/0-minimal.jpg);
+    background-size: 110%;
+    height: 200px;
+    width: 100%;
+    margin: 20px;
+    border-radius: 23px;
+}
+
+.card-img:hover {
+    animation: shake .25s;
+}
+
+.card-footer {
+    margin: 30px;
+    margin-top: 0px;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.card-footer>.text-title {
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+@keyframes shake {
+    10% {
+        transform: rotate(2deg);
+    }
+
+    20% {
+        transform: rotate(-2deg);
+    }
+
+    30% {
+        transform: rotate(2deg);
+    }
+
+    40% {
+        transform: rotate(-2deg);
+    }
 }
